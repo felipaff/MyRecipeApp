@@ -1,17 +1,27 @@
 //
 //  MyRecipeAppApp.swift
-//  MyRecipeApp
 //
-//  Created by Felipe Peña on 24-04-25.
-//
-
 import SwiftUI
+import Firebase
 
 @main
 struct MyRecipeAppApp: App {
+    @StateObject var authViewModel = AuthViewModel()
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                if authViewModel.isLoggedIn {
+                    RecipeInputView()
+                } else {
+                    LoginView()
+                }
+            }
+            .environmentObject(authViewModel)
         }
     }
 }

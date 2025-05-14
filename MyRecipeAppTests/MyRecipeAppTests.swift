@@ -5,7 +5,7 @@
 //  Created by Felipe Peña on 24-04-25.
 //
 
-import Testing
+/*import Testing
 @testable import MyRecipeApp
 
 struct MyRecipeAppTests {
@@ -15,3 +15,4 @@ struct MyRecipeAppTests {
     }
 
 }
+*/

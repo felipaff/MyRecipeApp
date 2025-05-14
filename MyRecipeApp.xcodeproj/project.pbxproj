@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BBEF843E2DBB3A05009A7AD6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BBEF843D2DBB3A05009A7AD6 /* FirebaseAuth */; };
+		BBEF84402DBB3A05009A7AD6 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = BBEF843F2DBB3A05009A7AD6 /* FirebaseCore */; };
+		BBEF84922DBB4707009A7AD6 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = BBEF84912DBB4707009A7AD6 /* GoogleSignIn */; };
+		BBEF84942DBB4707009A7AD6 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BBEF84932DBB4707009A7AD6 /* GoogleSignInSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BBEF839E2DBB3106009A7AD6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +36,24 @@
 		BBEF83A72DBB3106009A7AD6 /* MyRecipeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRecipeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BBEF847C2DBB3FA5009A7AD6 /* Exceptions for "MyRecipeApp" folder in "MyRecipeApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Firebase/GoogleSignInHelper.swift,
+				"GoogleService-Info.plist.bkp.plist",
+				Info.plist,
+			);
+			target = BBEF838F2DBB3103009A7AD6 /* MyRecipeApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BBEF83922DBB3103009A7AD6 /* MyRecipeApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BBEF847C2DBB3FA5009A7AD6 /* Exceptions for "MyRecipeApp" folder in "MyRecipeApp" target */,
+			);
 			path = MyRecipeApp;
 			sourceTree = "<group>";
 		};
@@ -52,6 +74,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBEF84402DBB3A05009A7AD6 /* FirebaseCore in Frameworks */,
+				BBEF843E2DBB3A05009A7AD6 /* FirebaseAuth in Frameworks */,
+				BBEF84922DBB4707009A7AD6 /* GoogleSignIn in Frameworks */,
+				BBEF84942DBB4707009A7AD6 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +138,10 @@
 			);
 			name = MyRecipeApp;
 			packageProductDependencies = (
+				BBEF843D2DBB3A05009A7AD6 /* FirebaseAuth */,
+				BBEF843F2DBB3A05009A7AD6 /* FirebaseCore */,
+				BBEF84912DBB4707009A7AD6 /* GoogleSignIn */,
+				BBEF84932DBB4707009A7AD6 /* GoogleSignInSwift */,
 			);
 			productName = MyRecipeApp;
 			productReference = BBEF83902DBB3103009A7AD6 /* MyRecipeApp.app */;
@@ -195,6 +225,10 @@
 			);
 			mainGroup = BBEF83872DBB3103009A7AD6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BBEF843C2DBB3A05009A7AD6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BBEF84902DBB4707009A7AD6 /* XCRemoteSwiftPackageReference "GoogleSignIn-IOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BBEF83912DBB3103009A7AD6 /* Products */;
 			projectDirPath = "";
@@ -322,7 +356,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/MyRecipeApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -380,7 +416,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/MyRecipeApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -400,6 +438,7 @@
 				DEVELOPMENT_TEAM = 28QXNDNJH2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/MyRecipeApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +467,7 @@
 				DEVELOPMENT_TEAM = 28QXNDNJH2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/MyRecipeApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +598,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BBEF843C2DBB3A05009A7AD6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+		BBEF84902DBB4707009A7AD6 /* XCRemoteSwiftPackageReference "GoogleSignIn-IOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-IOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBEF843D2DBB3A05009A7AD6 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBEF843C2DBB3A05009A7AD6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BBEF843F2DBB3A05009A7AD6 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBEF843C2DBB3A05009A7AD6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		BBEF84912DBB4707009A7AD6 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBEF84902DBB4707009A7AD6 /* XCRemoteSwiftPackageReference "GoogleSignIn-IOS" */;
+			productName = GoogleSignIn;
+		};
+		BBEF84932DBB4707009A7AD6 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBEF84902DBB4707009A7AD6 /* XCRemoteSwiftPackageReference "GoogleSignIn-IOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BBEF83882DBB3103009A7AD6 /* Project object */;
 }

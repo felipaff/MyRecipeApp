@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Identidad de la App -->
+    <key>CFBundleIdentifier</key>
+    <string>com.fel.ia.MyRecipeApp</string>
+    <key>CFBundleName</key>
+    <string>MyRecipeApp</string>
+    <key>CFBundleDisplayName</key>
+    <string>MyRecipeApp</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+
+    <!-- Google Sign-In -->
+    <key>GIDClientID</key>
+    <string>170677833482-pfd6ui5rjk48q79mmqo27llof7pet1pk.apps.googleusercontent.com</string>
+
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.170677833482-pfd6ui5rjk48q79mmqo27llof7pet1pk</string>
+            </array>
+        </dict>
+    </array>
+
+    <!-- Permitir que iOS abra esquemas de Google -->
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>google</string>
+        <string>com.googleusercontent.apps.170677833482-pfd6ui5rjk48q79mmqo27llof7pet1pk</string>
+    </array>
+    <key>OPENAI_API_KEY</key>
+	<string>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</string>
+
+</dict>
+</plist>
